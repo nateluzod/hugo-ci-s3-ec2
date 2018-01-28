@@ -1,4 +1,6 @@
 language: javascript
+dist: trusty
+sudo: false
 
 # Get deps
 before_script:
