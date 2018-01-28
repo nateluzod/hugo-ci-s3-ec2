@@ -9,7 +9,7 @@ before_script:
 # Build and clean
 script:
   - hugo --baseURL="http://hugo-ci-s3-ec2.s3-website-us-west-1.amazonaws.com/"
-#  - gulp minify
+  - node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js minify
   
 # Deploy
 deploy:
