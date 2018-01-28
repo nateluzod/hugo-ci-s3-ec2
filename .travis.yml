@@ -20,3 +20,4 @@ deploy:
   bucket: "hugo-ci-s3-ec2"
   skip_cleanup: true
   local_dir: public  
+  acl: public_read
