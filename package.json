@@ -1,0 +1,23 @@
+{
+  "name": "hugo-ci-s3-ec2",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/nateluzod/hugo-ci-s3-ec2.svg?branch=master)](https://travis-ci.org/nateluzod/hugo-ci-s3-ec2)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nateluzod/hugo-ci-s3-ec2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nateluzod/hugo-ci-s3-ec2/issues"
+  },
+  "homepage": "https://github.com/nateluzod/hugo-ci-s3-ec2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^4.0.0"
+  }
+}
