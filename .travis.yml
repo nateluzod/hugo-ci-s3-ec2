@@ -1,16 +1,14 @@
-# Install the apt prerequisites
-addons:
-  apt:
-    packages:
-      - python-pygments
-
-# Clean and don't fail
-install:
-  - rm -rf public || exit 0
+# Get hugo
+- wget -O /tmp/hugo.deb https://github.com/spf13/hugo/releases/download/v0.21/hugo_0.21_Linux-64bit.deb
+- sudo dpkg -i /tmp/hugo.deb
 
 # Build the website
 script:
-  - binaries/hugo --baseURL="http://hugo-ci-s3-ec2.s3-website-us-west-1.amazonaws.com/"
+  - hugo --baseURL="http://hugo-ci-s3-ec2.s3-website-us-west-1.amazonaws.com/"
+  
+# Post process
+- npm install
+- gulp minify
 
 # Deploy
 deploy:
